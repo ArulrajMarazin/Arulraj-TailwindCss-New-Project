@@ -9,11 +9,31 @@
 </head>
 
 <body>
-    <header class="">
+    <header class="bg-black sticky top-0 z-50 py-4 px-8 text-white shadow-md">
 
-        
+        <nav class="flex items-center justify-between md:justify-around">
+            <div class="flex items-center gap-2">
+                <img src="./assets/img/brandlogo.webp" alt="brand" class="w-[35px]">
+                <h1 class="text-xl font-bold">DocGenAI</h1>
+            </div>
+            <i class="fa-solid fa-bars md:!hidden"></i>
+            <ul class=" gap-4 text-gray-400 text-sm font-medium hidden md:flex">
+                <li class="duration-150 hover:text-white "><a href="#" class="">How It Works</a></li>
+                <li class="duration-150 hover:text-white "><a href="#" class="">Documents</a></li>
+                <li class="duration-150 hover:text-white "><a href="#" class="">Pricing</a></li>
+            </ul>
+            <div class="flex gap-1 text-sm font-medium items-center hidden md:flex">
+                <button
+                    class="py-1.5 px-4 rounded-lg duration-150 hover:bg-red-600 cursor-pointer hover:text-white">Sign
+                    In</button>
+                <button
+                    class="bg-red-600 py-1.5 px-4 ml-4 rounded-lg duration-150 cursor-pointer hover:bg-white hover:text-red-600 ">Sign
+                    Up</button>
+            </div>
+        </nav>
 
     </header>
+
 
     <main class="">
 

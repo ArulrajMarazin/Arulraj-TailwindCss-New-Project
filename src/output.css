@@ -57,6 +57,9 @@
     --font-weight-black: 900;
     --tracking-tight: -0.025em;
     --tracking-wide: 0.025em;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
     --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -328,6 +331,9 @@
   .h-\[6500px\] {
     height: 6500px;
   }
+  .h-\[150px\] {
+    height: 150px;
+  }
   .w-1 {
     width: var(--spacing);
   }
@@ -366,6 +372,9 @@
   }
   .w-\[1075px\] {
     width: 1075px;
+  }
+  .w-\[150px\] {
+    width: 150px;
   }
   .w-fit {
     width: fit-content;
@@ -438,6 +447,9 @@
   }
   .gap-43 {
     gap: calc(var(--spacing) * 43);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
   }
   :where(.space-x-0 > :not(:last-child)) {
     --tw-space-x-reverse: 0;
@@ -782,6 +794,9 @@
       background-color: color-mix(in oklab, var(--color-red-900) 25%, transparent);
     }
   }
+  .bg-red-900 {
+    background-color: var(--color-red-900);
+  }
   .bg-red-900\/50 {
     background-color: color-mix(in srgb, oklch(39.6% 0.141 25.723) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -820,6 +835,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-transparent {
+    background-color: transparent;
   }
   .bg-linear-to-b {
     --tw-gradient-position: to bottom;
@@ -1386,6 +1404,9 @@
   .text-red-700 {
     color: var(--color-red-700);
   }
+  .text-red-600 {
+    color: var(--color-red-600);
+  }
   .text-red-800 {
     color: var(--color-red-800);
   }
@@ -1728,6 +1749,12 @@
     .md\:grid-cols-\[2300px\] {
       grid-template-columns: 2300px;
     }
+    .md\:w-\[250px\] {
+      width: 250px;
+    }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     .md\:justify-around {
       justify-content: space-around;
     }
@@ -1773,6 +1800,8 @@
     .lg\:inline-block {
       display: inline-block;
     }
+  }
+  @media (width >= 64rem) {
     .lg\:w-1\/3 {
       width: calc(1 / 3 * 100%);
     }
@@ -1837,6 +1866,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 1;
+}
+    .lg\:py-32 {
+      padding-block: calc(var(--spacing) * 32);
+    }
+  }
 }
 @property --tw-space-x-reverse {
   syntax: "*";
